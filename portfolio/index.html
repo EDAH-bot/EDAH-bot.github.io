@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Edah Sodjinin Ulriche</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+           <ul>
+               <li><a href="#accueil">Accueil</a></li>
+               <li><a href="#about">À propos</a></li>
+               <li><a href="#skills">Compétences</a></li>
+               <li><a href="#projects">Projets</a></li>
+               <li><a href="#contact">Contact</a></li>
+           </ul>
+       </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <div class="profile-picture" >
+             <img src="assets/profile.jpg.JPG" alt="Photo de profil de Edah Sodjinin Ulriche" >
+        </div>
+        <h1>Je suis Sodjinin Ulriche EDAH</h1>
+        <p>Spécialiste en sciences de l'éducation et de la formation, instituteur, et 
+        développeur web en devenir.</p>
+        <p>Passionné par l'éducation, la technologie et la création de solutions innovantes.</p>
+         <a href="#projects" class="btn">Voir mes projets</a>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+         <h2>À propos de moi</h2>
+         <p>Je m'appelle <strong>Sodjinin Ulriche EDAH</strong>, spécialiste en 
+         <strong>sciences de l'éducation et de la formation</strong> et instituteur de  métier.</p>
+         <p>Actuellement en formation débutante en développement web avec<strong>D-CLIC OIF</strong>, je combine mes compétences pédagogiques avec ma passion pour la technologie pour créer des solutions innovantes et accessibles.</p>
+         <a href="assets/CV_Ulriche S. EDAH.pdf" class="btn">Télécharger mon CV</a>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills">
+        <h2>Mes Compétences</h2>
+        <table>
+           <thead>
+               <tr>
+                  <th>Hard skills</th>
+                  <th>Soft Skills</th>
+               </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>HTML</td>
+                  <td>Résolution de problèmes</td>
+                </tr>
+                <tr>
+                   <td>CSS</td>
+                   <td>Communication efficace</td>
+               </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Adaptabilité</td>
+                </tr>
+                <tr>
+                     <td>Responsive Design</td>
+                     <td>Gestion de projet</td>
+                 </tr>
+                  <tr>
+                       <td>VS Code</td>
+                       <td>Travail d'équipe</td>
+                    </tr>
+          </tbody>
+       </table>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+         <h2>Mes Projets</h2>
+         <div class="project">
+            <h3>Calculateur d'empreinte carbone</h3>
+            <p>Un outil interactif pour calculer votre empreinte carbone et obtenir des conseils pour la réduire.</p>
+            <button onclick="showCarbonCalculator()">Utiliser le calculateur</button>
+            <div id="carbon-calculator" style="display: none;">
+                <h4>Calculateur d'empreinte carbone</h4>
+                <label for="km">Kilomètres parcourus en voiture par an :</label>
+                <input type="number" id="km" placeholder="Ex: 10000">
+                <label for="electricity">Consommation électrique (kWh/mois) :</label>
+                <input type="number" id="electricity" placeholder="Ex: 200">
+                <button onclick="calculateCarbon()">Calculer</button>
+                <p id="carbon-result"></p>
+           </div>
+        </div>
+        <div class="project">
+            <h3>Gestionnaire de budget</h3>
+            <p>Un outil pour suivre vos dépenses et vos revenus, et visualiser votre budget mensuel.</p>
+            <button onclick="showBudgetManager()">Utiliser le gestionnaire</button>
+            <div id="budget-manager" style="display: none;">
+                <h4>Gestionnaire de budget</h4>
+                <label for="income">Revenus mensuels :</label>
+                <input type="number" id="income" placeholder="Ex: 2000">
+                <label for="expenses">Dépenses mensuelles :</label>
+                <input type="number" id="expenses" placeholder="Ex: 1500">
+                <button onclick="calculateBudget()">Calculer</button>
+                <p id="budget-result"></p>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Quiz sur les énergies renouvelables</h3>
+        <p>Un quiz interactif pour tester vos connaissances sur les énergies renouvelables.</p>
+        <button onclick="showQuiz()">Commencer le quiz</button>
+        <div id="quiz-section" style="display: none;">
+            <h4>Quiz sur les énergies renouvelables</h4>
+            <p id="question"></p>
+            <div id="options"></div>
+            <button id="next-btn" style="display: none;">Question suivante</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+         <h2>Vous avez un projet en tête ? N'hésitez pas à me contacter</h2>
+         <form id="contact-form">
+               <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id= »email » name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                 <button type="submit">Envoyer</button>
+         </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by Edah Sodjinin Ulriche</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src= "scripts/carbon-calculator.js"></script>
+    <script src= "scripts/budget-manager.js"></script>
+    <script src= "scripts/quiz.js"></script>
+
+</body>
+</html>

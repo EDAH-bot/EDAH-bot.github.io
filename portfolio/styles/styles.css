@@ -1,0 +1,141 @@
+body {
+    font-family : Arial, sans-serif ;
+    margin : 0 ;
+    padding : 0 ;
+    background-color : #f0f4f8 ;
+    color : #333 ;
+   }
+
+   header {
+    background-color : #2c3e50 ;
+    color : #fff ;
+    padding : 20px 0 ;
+    text-align : center ;
+   }
+
+   nav ul {
+    list-style : none ;
+    padding : 0 ;
+   }
+
+   nav ul li {
+    display : inline ;
+    margin : 0 15px ;
+   }
+
+   nav ul li a {
+    color : #fff ;
+    text-decoration : none ;
+    font-weight : bold ;
+   }
+
+   section {
+    padding : 60px 20px ;
+    min-height : 100vh ;
+   }
+
+   #accueil {
+    background-color : #3498db ;
+    color : #fff ;
+    text-align : center ;
+   }
+
+   .profile-picture {
+    text-align : center ;
+    margin-bottom : 20px ;
+   }
+
+   .profile-picture img {
+    width : 150px ;
+    height : 150px ;
+    border-radius : 50% ;
+    border : 3px solid #3498db ;
+    object-fit : cover ;
+    transition : transform 0.3s ease, border-color 0.3s ease ;
+   }
+
+   .profile-picture img :hover {
+    transform : scale(1.1) ;
+    border-color : #e74c3c ;
+   }
+
+   #about {
+    background-color : #ecf0f1 ;
+   }
+
+   #skills {
+    background-color : #bdc3c7 ;
+   }
+
+   #skills table {
+    width : 100% ;
+    border-collapse : collapse ;
+    margin-top : 20px ;
+   }
+
+   #skills th, #skills td {
+    border : 1px solid #ddd ;
+    padding : 10px ;
+    text-align : left ;
+   }
+
+   #skills th {
+    background-color : #2c3e50 ;
+    color : #fff ;
+   }
+
+   #projects {
+    background-color : #95a5a6 ;
+   }
+
+   #contact {
+    background-color : #7f8c8d ;
+    color : #fff ;
+   }
+
+   footer {
+    text-align : center ;
+    padding : 20px ;
+    background-color : #2c3e50 ;
+    color : #fff ;
+   }
+
+   .btn {
+    display : inline-block ;
+    padding : 10px 20px ;
+    background-color : #e74c3c ;
+    color : #fff ;
+    text-decoration : none ;
+    border-radius : 5px ;
+    margin-top : 20px ;
+   }
+
+   form {
+    display : flex ;
+    flex-direction : column ;
+   }
+
+   form label {
+    margin-bottom : 5px ;
+    font-weight : bold ;
+   }
+
+   form input, form textarea {
+    margin-bottom : 10px ;
+    padding : 10px ;
+    border : 1px solid #ddd ;
+    border-radius : 5px ;
+   }
+
+   form button {
+    padding : 10px ;
+    background-color : #3498db ;
+    color : #fff ;
+    border : none ;
+    border-radius : 5px ;
+    cursor : pointer ;
+   }
+
+   form button :hover {
+    background-color : #2980b9 ;
+   }
